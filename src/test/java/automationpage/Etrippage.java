@@ -45,7 +45,7 @@ public class Etrippage
 		{
 			WebElement month = driver.findElement(By.xpath("//span[@class='ui-datepicker-month']"));
 			String month1 = month.getText();
-			if(month1.equals("November"))
+			if(month1.equals("December"))
 			{
 				System.out.println(month);
 				break;
@@ -55,7 +55,7 @@ public class Etrippage
 				driver.findElement(By.xpath("//span[@class='ui-icon ui-icon-circle-triangle-e']")).click();
 			}
 			
-			List <WebElement> alldates1 = driver.findElements(By.xpath("//*[@id=\"ui-datepicker-div\"]/table/tbody/tr/td/a"));
+			List <WebElement> alldates1 = driver.findElements(By.xpath("//*[@id="ui-datepicker-div"]/table/tbody/tr/td/a"));
 			
 			for(WebElement dateelement:alldates1)
 			{
